@@ -21,10 +21,9 @@ spec:
         - name: mysql-pod
           image: ECRURI/clo835-assignmnet2-my-mysql-repo:v1.0
           env:
-           -name: MYSQL_ROOT_PASSWORD
-            value: "pw"
+            - name: MYSQL_ROOT_PASSWORD
+              value: "pw"
           resources: {}
       dnsPolicy: ClusterFirst
       restartPolicy: Always
-      
       
